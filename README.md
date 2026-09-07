@@ -1,5 +1,7 @@
 # Matt Pocock 스킬 튜토리얼 — 공지사항 게시판을 배포까지
 
+> 📄 **PDF로 보기:** [README.pdf 내려받기](https://github.com/sik2/matt-user-guide/raw/main/README.pdf) (A4, 45쪽)
+
 ## 먼저 읽는 용어 정리
 
 ### AI와 대화
