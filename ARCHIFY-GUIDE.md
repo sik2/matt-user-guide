@@ -212,7 +212,7 @@ Claude Code는 기본적으로 `~/.claude/skills/`에 설치됩니다. `.agents/
 게시판 실습을 진행했다면 6강에서 만든 `notice-board`를 그대로 엽니다. 새 폴더·새 대화를 만들 필요는 없습니다. 아직 코드가 없고 완성된 예제를 분석하려면, 프로젝트를 보관할 상위 폴더의 PowerShell에서 한 번 실행합니다.
 
 ```powershell
-git clone https://github.com/jhs512/matt-user-guide-examples.git
+git clone https://github.com/sik2/matt-user-guide-examples.git
 cd matt-user-guide-examples
 ```
 

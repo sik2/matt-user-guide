@@ -1,4 +1,4 @@
-# Matt Pocock 스킬 튜토리얼 — 고등학교 공지사항 게시판을 배포까지
+# Matt Pocock 스킬 튜토리얼 — 공지사항 게시판을 배포까지
 
 ## 먼저 읽는 용어 정리
 
@@ -167,7 +167,7 @@ npx --yes skills@latest add mattpocock/skills --global --skill "*" --agent codex
 이 매뉴얼 저장소 `matt-user-guide`는 **설명서**이고, 여러분이 만들 `notice-board`는 **실습 프로젝트**입니다. 1강에서 `notice-board`를 한 번 만들고 에이전트의 작업 폴더로 엽니다. 이후 파일은 그 안에 계속 쌓입니다.
 
 - **처음부터 만들기:** 1강에서 빈 `notice-board`를 만들고 시작합니다. 이 문서의 기본 경로입니다.
-- **완성된 예제만 실행하기:** [실행 저장소 README](https://github.com/jhs512/matt-user-guide-examples#readme)의 복제·실행 안내를 따릅니다. 이미 코드가 있으므로 생성 명령을 다시 실행하지 않습니다.
+- **완성된 예제만 실행하기:** [실행 저장소 README](https://github.com/sik2/matt-user-guide-examples#readme)의 복제·실행 안내를 따릅니다. 이미 코드가 있으므로 생성 명령을 다시 실행하지 않습니다.
 
 ## 시작 전 준비
 
@@ -226,7 +226,7 @@ docker info
 
 각 강은 **입력 → 예상 결과물 → 사용 전후 차이 → 완료 확인** 순서입니다. 대화와 결과물은 예시이며, 실제 실행 기록은 문서 마지막에 연결했습니다.
 
-## 만들 제품: 고등학교 공지사항 게시판
+## 만들 제품: 공지사항 게시판
 
 학생·학부모 등 방문자는 로그인 없이 고등학교의 공지 목록과 상세를 읽습니다. 학교 공지 담당자 한 명은 관리자로 로그인해 공지를 등록·수정·삭제합니다. 작성 즉시 공개되며, 초안·첨부파일·댓글·회원가입은 이번 범위에서 제외합니다.
 
@@ -258,7 +258,7 @@ flowchart LR
 
 예제는 Kotlin/Spring 백엔드와 React 프론트를 가진 게시판입니다. 테스트와 운영 배포도 작업 범위에 포함합니다. 기술 선택은 인터뷰에서 정할 조건이며, Matt 스킬은 다른 기술을 사용하는 프로젝트에도 적용할 수 있습니다.
 
-이 가이드는 스킬을 언제 호출하고 어떤 결과를 확인하는지 설명합니다. 앱 설치·실행·환경변수·서비스별 배포 방법은 [실행 프로젝트 안내](https://github.com/jhs512/matt-user-guide-examples#readme)를 참고합니다.
+이 가이드는 스킬을 언제 호출하고 어떤 결과를 확인하는지 설명합니다. 앱 설치·실행·환경변수·서비스별 배포 방법은 [실행 프로젝트 안내](https://github.com/sik2/matt-user-guide-examples#readme)를 참고합니다.
 
 ## 수업 지도
 
@@ -344,9 +344,9 @@ flowchart LR
 
 **시작 상태:** 스킬 설치와 재시작을 마쳤고, 빈 실습 폴더를 에이전트에서 열었습니다. **입력 위치:** 같은 프로젝트의 대화창. **끝나면:** AGENTS.md, 이를 참조하는 CLAUDE.md와 작업 안내 파일이 생기고, GitHub 저장소 연결과 첫 커밋·푸시를 마칩니다. 아직 게시판 화면이 없는 것이 정상입니다.
 
-**실제 결과 보기 · [002](https://github.com/jhs512/matt-user-guide-examples/commit/002):** 작업 규칙이 없는 상태에서 [AGENTS.md](https://github.com/jhs512/matt-user-guide-examples/blob/002/AGENTS.md)와 [에이전트용 안내 문서](https://github.com/jhs512/matt-user-guide-examples/tree/002/docs/agents)가 생겼습니다. 무엇을 먼저 읽고 어디에 작업을 기록할지 확인해 보세요.
+**실제 결과 보기 · [002](https://github.com/sik2/matt-user-guide-examples/commit/002):** 작업 규칙이 없는 상태에서 [AGENTS.md](https://github.com/sik2/matt-user-guide-examples/blob/002/AGENTS.md)와 [에이전트용 안내 문서](https://github.com/sik2/matt-user-guide-examples/tree/002/docs/agents)가 생겼습니다. 무엇을 먼저 읽고 어디에 작업을 기록할지 확인해 보세요.
 
-강별 링크의 `002`–`006`은 수업 결과를 가리키는 태그입니다. **2026-09-06 확인:** GitHub 저장소 자체를 `jhs512/matt-user-guide-examples`로 이름 변경했고, 새 주소의 접근과 `002`–`006` 태그를 확인했습니다. 아래 강별 결과 설명은 기존 예제 기준이며, 이번에 추가한 첫 커밋의 `CLAUDE.md` 조건까지 예제 이력에 반영됐는지는 별도 확인이 필요합니다.
+강별 링크의 `002`–`006`은 수업 결과를 가리키는 태그입니다.
 
 > **최초 1회만 호출하세요.** `/setup-matt-pocock-skills`는 프로젝트의 첫 작업 규칙을 만드는 스킬입니다. **이 프로젝트에서는 처음 단 한 번만 호출하고, 이후 작업에서는 반복하지 않습니다.**
 
@@ -484,7 +484,7 @@ flowchart LR
 
 **시작 상태:** 2강의 작업 규칙 파일이 있습니다. **입력 위치:** 그대로 같은 대화창. **할 일:** 에이전트의 질문에 답하고 합의 내용을 확인합니다. **끝나면:** 용어와 결정 이유가 문서에 남습니다. 아직 앱을 실행하는 단계는 아닙니다.
 
-**실제 결과 보기 · [003](https://github.com/jhs512/matt-user-guide-examples/commit/003):** 질문과 답변으로 정한 내용을 [CONTEXT.md](https://github.com/jhs512/matt-user-guide-examples/blob/003/CONTEXT.md)와 [ADR 결정 기록](https://github.com/jhs512/matt-user-guide-examples/tree/003/docs/adr)에 남겼습니다. 막연한 “공지 게시판”이 어떤 용어와 규칙을 가진 제품으로 구체화됐는지 확인해 보세요. [이전 단계와 비교](https://github.com/jhs512/matt-user-guide-examples/commit/003)
+**실제 결과 보기 · [003](https://github.com/sik2/matt-user-guide-examples/commit/003):** 질문과 답변으로 정한 내용을 [CONTEXT.md](https://github.com/sik2/matt-user-guide-examples/blob/003/CONTEXT.md)와 [ADR 결정 기록](https://github.com/sik2/matt-user-guide-examples/tree/003/docs/adr)에 남겼습니다. 막연한 “공지 게시판”이 어떤 용어와 규칙을 가진 제품으로 구체화됐는지 확인해 보세요. [이전 단계와 비교](https://github.com/sik2/matt-user-guide-examples/commit/003)
 
 이번에 추가한 핵심 단계입니다. ‘시큐리티를 쓴다’는 말만으로는 누가 무엇을 할 수 있는지, 로그인은 얼마나 유지되는지 결정되지 않습니다. 구현 전에 실제 사용 상황을 질문하고 답을 문서로 남깁니다.
 
@@ -495,7 +495,7 @@ flowchart LR
 ```text
 /grill-with-docs
 
-고등학교 공지사항 게시판을 만들고 싶어.
+공지사항 게시판을 만들고 싶어.
 방문자는 목록과 상세를 보고, 관리자 한 명만 등록·수정·삭제해.
 회원가입, 댓글, 첨부파일, 검색, 초안, 상단 고정은 이번 범위에서 빼자.
 
@@ -505,7 +505,7 @@ flowchart LR
 프론트(frontend/)는 Cloudflare Pages로 배포하고 GitHub Actions가 CI/CD를 담당해.
 백엔드 폴더는 backend/, 프론트엔드 폴더는 frontend/로 생각하고 있어.
 같은 저장소에 둘 때 각 폴더의 역할과 실행·배포 경로를 질문으로 확인하고 합의해줘.
-도메인은 고등학교 공지사항 하나이므로 루트의 CONTEXT.md와 docs/adr/를 공유하고 싶어.
+도메인은 공지사항 하나이므로 루트의 CONTEXT.md와 docs/adr/를 공유하고 싶어.
 
 권한, 인증 유지, 입력 제한, 오류,
 목록을 여러 페이지로 나누고 이동하는 방법, DB 전환, 자동배포 완료 기준을 질문해서 구체적으로 정해줘.
@@ -546,7 +546,7 @@ flowchart LR
 
 ### 실제 결과물: 용어집과 결정 기록
 
-실습 저장소의 **3강 태그 `003`**, [커밋 `fc147a7`](https://github.com/jhs512/matt-user-guide-examples/commit/fc147a7fbb29ec5e64c331ead18c760475e5f67d) (`docs: define notice board requirements and decisions`)에서 아래 세 파일이 추가됐습니다. 다음 내용은 해당 커밋의 원문 전체입니다.
+실습 저장소의 **3강 태그 `003`**, [커밋 `fc147a7`](https://github.com/sik2/matt-user-guide-examples/commit/fc147a7fbb29ec5e64c331ead18c760475e5f67d) (`docs: define notice board requirements and decisions`)에서 아래 세 파일이 추가됐습니다. 다음 내용은 해당 커밋의 원문 전체입니다.
 
 ```text
 이 커밋에서 추가된 문서
@@ -556,7 +556,7 @@ flowchart LR
     └── 0002-ci-controlled-deployment.md
 ```
 
-**[CONTEXT.md](https://github.com/jhs512/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/CONTEXT.md) 원문:**
+**[CONTEXT.md](https://github.com/sik2/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/CONTEXT.md) 원문:**
 
 ```markdown
 # 공지사항
@@ -571,7 +571,7 @@ flowchart LR
 **삭제(Delete)**: 공지를 영구 제거하는 동작. 숨김이나 휴지통을 뜻하지 않는다.
 ```
 
-**[docs/adr/0001-admin-authentication.md](https://github.com/jhs512/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/docs/adr/0001-admin-authentication.md) 원문:**
+**[docs/adr/0001-admin-authentication.md](https://github.com/sik2/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/docs/adr/0001-admin-authentication.md) 원문:**
 
 ```markdown
 # 메모리에 보관하는 짧은 Bearer 토큰
@@ -579,7 +579,7 @@ flowchart LR
 관리자 한 명과 공개 조회가 필요한 실습이다. 서로 다른 서비스 도메인을 사용하므로 쿠키 세션 대신 30분 access JWT를 프론트 메모리에 보관한다. 새로고침하면 재로그인하며 로그아웃은 브라우저 토큰 제거일 뿐 서버의 즉시 폐기가 아니다. 관리자명과 BCrypt 해시 및 충분히 긴 서명 키는 운영 환경에 주입한다. Refresh token, 계정 관리, 외부 인증 제공자는 범위 밖이다.
 ```
 
-**[docs/adr/0002-ci-controlled-deployment.md](https://github.com/jhs512/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/docs/adr/0002-ci-controlled-deployment.md) 원문:**
+**[docs/adr/0002-ci-controlled-deployment.md](https://github.com/sik2/matt-user-guide-examples/blob/fc147a7fbb29ec5e64c331ead18c760475e5f67d/docs/adr/0002-ci-controlled-deployment.md) 원문:**
 
 ```markdown
 # 검증한 커밋만 배포
@@ -696,7 +696,7 @@ flowchart LR
 
 **시작 상태:** 3강에서 기능과 규칙을 합의했습니다. **할 일:** 같은 대화에서 명세 작성을 요청하고 빠진 기능이 없는지 읽습니다. **끝나면:** `.scratch/notice-board/spec.md`가 생깁니다. `.scratch`를 포함한 경로는 에이전트가 만들게 하면 됩니다.
 
-**실제 결과 보기 · [004 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/004):** 앞에서 정한 규칙이 구현할 기능과 확인 조건으로 정리된 파일입니다. 아래 입력 예시와 실제 명세를 나란히 읽어 보세요. [이전 단계와 비교](https://github.com/jhs512/matt-user-guide-examples/commit/004)
+**실제 결과 보기 · [004 커밋](https://github.com/sik2/matt-user-guide-examples/commit/004):** 앞에서 정한 규칙이 구현할 기능과 확인 조건으로 정리된 파일입니다. 아래 입력 예시와 실제 명세를 나란히 읽어 보세요. [이전 단계와 비교](https://github.com/sik2/matt-user-guide-examples/commit/004)
 
 이렇게 무엇을 만들고 어떤 조건을 만족해야 하는지 적은 문서를 **명세**라고 부릅니다.
 
@@ -792,7 +792,7 @@ flowchart LR
 
 **시작 상태:** 4강의 spec.md를 확인했습니다. **할 일:** 제안한 작업 순서를 읽고 승인합니다. **끝나면:** `.scratch/notice-board/issues/`에 작업별 Markdown 파일이 생깁니다. 여기서 티켓은 유료 이용권이 아니라 ‘할 일 한 장’입니다.
 
-**실제 결과 보기 · [005 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/005):** 하나의 명세가 조회, 로그인·작성, 수정·삭제, CI, 운영 배포 작업으로 나뉩니다. [첫 번째 티켓](https://github.com/jhs512/matt-user-guide-examples/blob/005/.scratch/notice-board/issues/01-read-notices.md)을 열면 실제 작업 크기를 볼 수 있습니다. [이전 단계와 비교](https://github.com/jhs512/matt-user-guide-examples/commit/005)
+**실제 결과 보기 · [005 커밋](https://github.com/sik2/matt-user-guide-examples/commit/005):** 하나의 명세가 조회, 로그인·작성, 수정·삭제, CI, 운영 배포 작업으로 나뉩니다. [첫 번째 티켓](https://github.com/sik2/matt-user-guide-examples/blob/005/.scratch/notice-board/issues/01-read-notices.md)을 열면 실제 작업 크기를 볼 수 있습니다. [이전 단계와 비교](https://github.com/sik2/matt-user-guide-examples/commit/005)
 
 티켓은 이번에 끝낼 작은 작업과 확인 방법을 적은 카드입니다. 먼저 끝내야 할 티켓은 해당 작업을 시작하기 전에 끝나야 하는 일입니다.
 
@@ -880,7 +880,7 @@ flowchart LR
 
 **시작 상태:** 명세와 티켓 파일이 있습니다. **할 일:** 아래 요청을 같은 대화에 보내 구현과 검사를 맡깁니다. **끝나면:** 실행할 코드와 테스트가 생깁니다. 그 뒤 로컬 화면을 확인하고 배포 준비로 넘어갑니다. 6강은 오래 걸릴 수 있으며 계정 설정이 필요하면 그 지점에서 안내를 따릅니다.
 
-**실제 변화 보기 · [6강 변경 내용 · 006](https://github.com/jhs512/matt-user-guide-examples/commit/006):** 명세와 티켓이 있던 저장소에 백엔드·프론트·테스트·실행 스크립트·CI가 추가됩니다. [006의 변경 코드](https://github.com/jhs512/matt-user-guide-examples/commit/006)와 [게시판 화면](https://github.com/jhs512/matt-user-guide-examples/blob/006/docs/evidence/admin-detail.png)을 확인해 보세요.
+**실제 변화 보기 · [6강 변경 내용 · 006](https://github.com/sik2/matt-user-guide-examples/commit/006):** 명세와 티켓이 있던 저장소에 백엔드·프론트·테스트·실행 스크립트·CI가 추가됩니다. [006의 변경 코드](https://github.com/sik2/matt-user-guide-examples/commit/006)와 [게시판 화면](https://github.com/sik2/matt-user-guide-examples/blob/006/docs/evidence/admin-detail.png)을 확인해 보세요.
 
 `006`는 구현과 검사를 마친 결과입니다. 구현 중 수행하는 테스트·리뷰·수정은 이 단계에 포함됩니다.
 
@@ -1526,12 +1526,12 @@ Wayfinder 다음에 `/grill-with-docs`를 반드시 다시 실행할 필요는 �
 
 | 태그 | 수업 | 결과 | 해당 강의 변경 내용 |
 | --- | --- | --- | --- |
-| 002 | 2강 · 하네스 세팅 | 작업 규칙과 에이전트 안내 | [002 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/002) |
-| 003 | 3강 · 요구사항 정리 | CONTEXT.md와 ADR | [003 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/003) |
-| 004 | 4강 · 명세 | 기능·완성 조건을 담은 spec.md | [004 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/004) |
-| 005 | 5강 · 티켓 | 작업 5개와 실행 순서 | [005 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/005) |
-| 006 | 6강 · 구현·검사·배포 | 게시판 코드·테스트·CI·배포 설정과 공개 결과 | [006 커밋](https://github.com/jhs512/matt-user-guide-examples/commit/006) |
+| 002 | 2강 · 하네스 세팅 | 작업 규칙과 에이전트 안내 | [002 커밋](https://github.com/sik2/matt-user-guide-examples/commit/002) |
+| 003 | 3강 · 요구사항 정리 | CONTEXT.md와 ADR | [003 커밋](https://github.com/sik2/matt-user-guide-examples/commit/003) |
+| 004 | 4강 · 명세 | 기능·완성 조건을 담은 spec.md | [004 커밋](https://github.com/sik2/matt-user-guide-examples/commit/004) |
+| 005 | 5강 · 티켓 | 작업 5개와 실행 순서 | [005 커밋](https://github.com/sik2/matt-user-guide-examples/commit/005) |
+| 006 | 6강 · 구현·검사·배포 | 게시판 코드·테스트·CI·배포 설정과 공개 결과 | [006 커밋](https://github.com/sik2/matt-user-guide-examples/commit/006) |
 
 설치는 PC 환경에 적용되므로 별도 코드 커밋이 없습니다. 실제 앱의 실행·배포 방법과 검증 기록은 별도 저장소에서 확인합니다.
 
-[실행 프로젝트 안내](https://github.com/jhs512/matt-user-guide-examples#readme) · [운영 상태와 증거](https://github.com/jhs512/matt-user-guide-examples/blob/main/docs/production-status.md)
+[실행 프로젝트 안내](https://github.com/sik2/matt-user-guide-examples#readme) · [운영 상태와 증거](https://github.com/sik2/matt-user-guide-examples/blob/main/docs/production-status.md)
