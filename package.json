@@ -1,0 +1,11 @@
+{
+  "name": "matt-user-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pdf": "node scripts/build-pdf.mjs README.md README.pdf"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}
